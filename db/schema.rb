@@ -27,7 +27,10 @@ ActiveRecord::Schema.define(version: 20140806031059) do
 
   create_table "orders", force: true do |t|
     t.text     "product"
-    t.decimal  "total"
+    t.decimal  "product_price"
+    t.integer  "num_products"
+    t.integer  "total"
+    t.integer  "customer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
